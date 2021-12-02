@@ -6,7 +6,7 @@ FROM node:12.18.3-alpine
 # Working directory be app
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY ./client/package*.json ./
 
 ###  Installing dependencies
 
