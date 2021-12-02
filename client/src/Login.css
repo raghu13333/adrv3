@@ -1,0 +1,226 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+      padding-left: 10%;
+    }
+  
+
+  }
+  .custom-select {
+    
+    font-family: Arial;
+    background-color: rgb(255, 255, 255);
+  }
+  .custom-selectt {
+    
+    font-family: Arial;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+ 
+  
+  .labell {
+    border: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  label::before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  
+  label img {
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  
+  :checked+label {
+    border-color: #ddd;
+  }
+  
+ 
+  
+  :checked+label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+  }
+
+  .top{
+    width: 95%;
+    position: fixed;
+    background-color: #f7f7f7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: 1px solid #b2b2b2;
+  }
+  
+  
+  .items{
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 50px;
+  }
+  
+  .app{
+    margin-left: 25px;
+    margin-right: 25px; 
+  }
+  .app_top {
+      display: table-cell;
+  }
+  .app_top img {
+      float: left;
+  }
+
+  .img-overlay-wrap {
+    position: relative;
+    display: inline-block; /* <= shrinks container to image size */
+    transition: transform 150ms ease-in-out;
+  }
+  
+  .img-overlay-wrap img { /* <= optional, for responsiveness */
+     display: block;
+     max-width: 100%;
+     height: auto;
+  }
+  
+  .img-overlay-wrap svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  rect{
+  
+    stroke-width: 5;
+  }
+  .svg {
+    
+    height: 512px;
+    width:512px;
+      
+     
+      
+    }
+
+    .modal-lg {
+      max-width: 80% !important;
+  }
+
+  .my-modal {
+    width: 90vw ;   /* Occupy the 90% of the screen width */
+    max-width: 90vw;
+} 
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  display:table;
+  background: rgba(0, 0, 0, 0.5);
+}
+#overlay i {
+ display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.loader{
+  position: absolute;
+  top:0px;
+  right:0px;
+  width:100%;
+  height:100%;
+  background-color:#eceaea;
+  background-image:url('./ajax-loader.gif');
+
+  background-size: 40px;
+  background-repeat:no-repeat;
+  background-position:center;
+  z-index:10000000;
+  opacity: 0.99;
+  filter: alpha(opacity=40);
+}
+

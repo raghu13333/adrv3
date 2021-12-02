@@ -1,0 +1,37 @@
+[
+    {
+        "id": 7,
+        "inference_model": "densenet_onnx",
+        "triton_output": "CAIRN",
+        "confidence": "12.420246",
+        "s3_path": "https://karthiknbucket1.s3.ap-southeast-1.amazonaws.com/dog.jpg"
+    },
+    {
+        "id": 8,
+        "inference_model": "inception_graphdef",
+        "triton_output": "SILKY TERRIER",
+        "confidence": "0.396808",
+        "s3_path": "https://karthiknbucket1.s3.ap-southeast-1.amazonaws.com/dog.jpg"
+    },
+    {
+        "id": 9,
+        "inference_model": "inception_graphdef",
+        "triton_output": "VULTURE",
+        "confidence": "0.950758",
+        "s3_path": "https://karthiknbucket1.s3.ap-southeast-1.amazonaws.com/vulture.jpeg"
+    },
+    {
+        "id": 10,
+        "inference_model": "densenet_onnx",
+        "triton_output": "CAIRN",
+        "confidence": "12.420246",
+        "s3_path": "https://karthiknbucket1.s3.ap-southeast-1.amazonaws.com/dog.jpg"
+    },
+    {
+        "id": 11,
+        "inference_model": "resnet-50torch",
+        "triton_output": "ANT",
+        "confidence": "2.153724",
+        "s3_path": "https://karthiknbucket1.s3.ap-southeast-1.amazonaws.com/1225872729_6f0856588f.jpg"
+    }
+]
