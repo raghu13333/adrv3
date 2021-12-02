@@ -12,6 +12,7 @@ on:
 env:
   AWS_REGION: ap-southeast-1                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: adrdashboardrepo           # set this to your Amazon ECR repository name
+  ECR_REPOSITORY1: adrdashboardrepo1           # set this to your Amazon ECR repository name
   ECS_SERVICE: adrdashboardservice                 # set this to your Amazon ECS service name
   ECS_CLUSTER: adrdashboardcluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: adrdashboardtask.json  # set this to the path to your Amazon ECS task definition
@@ -51,8 +52,8 @@ jobs:
         # be deployed to ECS.
         Docker build -f Dockerfileserver -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-        Docker build -f Dockerfileclient -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        Docker build -f Dockerfileclient -t $ECR_REGISTRY/$ECR_REPOSITORY1:$IMAGE_TAG .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY1:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
     - name: List files
       run: ls -R
