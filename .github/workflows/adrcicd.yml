@@ -10,7 +10,7 @@ on:
       - main
 
 env:
-  AWS_REGION: ap-southeast-1                   # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: ap-southeast-1                   # set this to your preferred AWS region, e.g us-west-1
   ECR_REPOSITORY: adrdashboardrepo           # set this to your Amazon ECR repository name
   ECS_SERVICE: adrdashboardservice                 # set this to your Amazon ECS service name
   ECS_CLUSTER: adrdashboardcluster                 # set this to your Amazon ECS cluster name
